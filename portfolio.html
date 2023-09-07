@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My Portfolio </title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="yes">
+            <b>Calabar Mini Store</b>
+            <nav>
+            <img src="images/search.png" class="demo">
+            <img src="images/cart.png" class="ff">
+            <img src="images/menue.png" class="go" onclick="toggleMenu()">
+        
+    </div>
+        <div class="iii" id="subMenu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <hr>
+        <li><a href="#">About</a></li>
+        <hr>
+        <li><a href="#">Services</a></li>
+        <hr>
+        <li><a href="#">Shipping</a></li>
+        <hr>
+        <li><a href="#">Order</a></li>
+        <hr>
+        <li><a href="#">Settings and Privacy</a></li>
+        <hr>
+        <li><a href="#">Contact</a></li>
+        <hr>
+        <li><a href="#">Logout</a></li>
+    </ul> 
+</div>
+</nav>
+        <script>
+            let SubMenu = document.getElementById("SubMenu");
+            function toggleMenu(){
+                SubMenu.ul.toggle("open-ul");
+            }
+        </script>
+    </body>
+</html>
